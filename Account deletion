@@ -1,1 +1,15 @@
-account deletion 
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head><title>Delete My Account</title></head>
+<body style="font-family:sans-serif; max-width:600px; margin:40px auto; padding:20px;">
+  <h1>Delete Account & Data</h1>
+  <p>Click the button below to permanently delete your account and all personal data.</p>
+  <form action="https://hook.us1.make.com/YOUR_WEBHOOK_HERE" method="POST">
+    <input type="hidden" name="package" value="com.yourcompany.yourapp">
+    <input type="email" name="email" placeholder="Your email (optional)" style="width:100%; padding:10px; margin:10px 0;">
+    <button type="submit" style="background:#d32f2f; color:white; padding:15px 30px; border:none; font-size:18px;">Permanently Delete My Account</button>
+  </form>
+  <p><small>This link works even if you uninstalled the app.</small></p>
+</body>
+</html>
